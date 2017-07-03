@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.awesomelibrary.andi.Events.PlayerEvent;
-import com.example.awesomelibrary.andi.Events.PlayerEventListener;
-import com.example.awesomelibrary.andi.Events.impl.MediaLoadEvent;
+import com.example.awesomelibrary.andi.events.PlayerEventListener;
+import com.example.awesomelibrary.andi.events.impl.MediaLoadEvent;
 import com.example.awesomelibrary.andi.SimplePlayer;
 
 public class MainActivity extends AppCompatActivity {

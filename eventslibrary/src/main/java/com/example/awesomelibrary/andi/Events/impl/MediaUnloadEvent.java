@@ -1,7 +1,7 @@
-package com.example.awesomelibrary.andi.Events.impl;
+package com.example.awesomelibrary.andi.events.impl;
 
-import com.example.awesomelibrary.andi.Events.PlayerEvent;
-import com.example.awesomelibrary.andi.Events.PlayerEventListener;
+import com.example.awesomelibrary.andi.events.PlayerEvent;
+import com.example.awesomelibrary.andi.events.PlayerEventListener;
 
 /**
  * Created by andi on 10/06/17.

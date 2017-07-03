@@ -1,8 +1,8 @@
-package com.example.awesomelibrary.andi.Events.impl;
+package com.example.awesomelibrary.andi.events.impl;
 
-import com.example.awesomelibrary.andi.Events.EventDispatcher;
-import com.example.awesomelibrary.andi.Events.ListenerRegistration;
-import com.example.awesomelibrary.andi.Events.PlayerEvent;
+import com.example.awesomelibrary.andi.events.EventDispatcher;
+import com.example.awesomelibrary.andi.events.ListenerRegistration;
+import com.example.awesomelibrary.andi.events.PlayerEvent;
 
 import java.util.ArrayList;
 import java.util.HashMap;

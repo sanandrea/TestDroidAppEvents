@@ -1,8 +1,8 @@
 package com.example.awesomelibrary.andi;
 
-import com.example.awesomelibrary.andi.Events.PlayerEventListener;
-import com.example.awesomelibrary.andi.Events.impl.EventDispatcherImpl;
-import com.example.awesomelibrary.andi.Events.impl.MediaLoadEvent;
+import com.example.awesomelibrary.andi.events.PlayerEventListener;
+import com.example.awesomelibrary.andi.events.impl.EventDispatcherImpl;
+import com.example.awesomelibrary.andi.events.impl.MediaLoadEvent;
 
 import org.junit.Test;
 

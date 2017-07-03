@@ -2,15 +2,18 @@ package com.example.awesomelibrary.andi;
 
 import android.view.ViewGroup;
 
-import com.example.awesomelibrary.andi.Events.EventDispatcher;
-import com.example.awesomelibrary.andi.Events.HasEventDispatcher;
-import com.example.awesomelibrary.andi.Events.impl.EventDispatcherImpl;
+import com.example.awesomelibrary.andi.events.EventDispatcher;
+import com.example.awesomelibrary.andi.events.HasEventDispatcher;
+import com.example.awesomelibrary.andi.events.impl.EventDispatcherImpl;
+import com.example.awesomelibrary.andi.models.DRMProtection;
+import com.example.awesomelibrary.andi.models.HasSettings;
+import com.example.awesomelibrary.andi.models.PlayerSettings;
 
 /**
  * Created by andi on 10/06/17.
  */
 
-public class SimplePlayer implements HasEventDispatcher{
+public class SimplePlayer implements HasEventDispatcher, HasSettings {
     private ViewGroup mPlayerView;
     private EventDispatcherImpl eventDispatcher;
     public SimplePlayer(ViewGroup playerView){
@@ -21,5 +24,10 @@ public class SimplePlayer implements HasEventDispatcher{
     @Override
     public EventDispatcher asEventDispatcher() {
         return eventDispatcher;
+    }
+
+    @Override
+    public PlayerSettings asSettings() {
+        return new PlayerSettings(1, DRMProtection.PlayReady);
     }
 }
