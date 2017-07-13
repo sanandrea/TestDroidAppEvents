@@ -8,6 +8,7 @@ import com.example.awesomelibrary.andi.events.impl.EventDispatcherImpl;
 import com.example.awesomelibrary.andi.models.DRMProtection;
 import com.example.awesomelibrary.andi.models.HasSettings;
 import com.example.awesomelibrary.andi.models.PlayerSettings;
+import com.google.gson.Gson;
 
 /**
  * Created by andi on 10/06/17.
@@ -19,6 +20,8 @@ public class SimplePlayer implements HasEventDispatcher, HasSettings {
     public SimplePlayer(ViewGroup playerView){
         mPlayerView = playerView;
         this.eventDispatcher = new EventDispatcherImpl();
+
+        Gson gson = new Gson();
     }
 
     @Override
