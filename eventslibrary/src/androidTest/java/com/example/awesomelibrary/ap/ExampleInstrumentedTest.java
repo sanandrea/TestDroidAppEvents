@@ -1,4 +1,4 @@
-package com.example.awesomelibrary.andi;
+package com.example.awesomelibrary.ap;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -2,11 +2,11 @@ package com.example.thineventswrapper;
 
 import java.util.HashSet;
 
-import com.example.awesomelibrary.andi.SimplePlayer;
-import com.example.awesomelibrary.andi.events.ListenerRegistration;
-import com.example.awesomelibrary.andi.events.PlayerEventListener;
-import com.example.awesomelibrary.andi.events.impl.MediaLoadEvent;
-import com.example.awesomelibrary.andi.events.impl.MediaUnloadEvent;
+import com.example.awesomelibrary.ap.SimplePlayer;
+import com.example.awesomelibrary.ap.events.ListenerRegistration;
+import com.example.awesomelibrary.ap.events.PlayerEventListener;
+import com.example.awesomelibrary.ap.events.impl.MediaLoadEvent;
+import com.example.awesomelibrary.ap.events.impl.MediaUnloadEvent;
 import com.example.thineventswrapper.wrapper.events.EventDispatcherWrapper;
 import com.example.thineventswrapper.wrapper.events.ListenerRegistrationWrapper;
 import com.example.thineventswrapper.wrapper.events.data.MediaLoadEventWrapper;
@@ -34,14 +34,14 @@ class EventDispatcherMapper implements EventDispatcherWrapper {
         eventMap.add(this.player.asEventDispatcher().addEventListener(MediaLoadEvent.getAssociatedType(), new PlayerEventListener<MediaLoadEvent>() {
             @Override
             public void onPlayerEvent(MediaLoadEvent ev) {
-                handler.onPlayerEvent(new MediaLoadEventWrapper(ev.getValue()));
+                handler.onPlayerEvent(new MediaLoadEventWrapper(ev));
             }
         }));
 
         eventMap.add(this.player.asEventDispatcher().addEventListener(MediaUnloadEvent.getAssociatedType(), new PlayerEventListener<MediaUnloadEvent>() {
             @Override
             public void onPlayerEvent(MediaUnloadEvent ev) {
-                handler.onPlayerEvent(new MediaUnLoadEventWrapper(ev.getValue()));
+                handler.onPlayerEvent(new MediaUnLoadEventWrapper(ev));
             }
         }));
 

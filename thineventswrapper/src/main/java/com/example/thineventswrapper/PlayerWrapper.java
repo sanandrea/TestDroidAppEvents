@@ -2,9 +2,9 @@ package com.example.thineventswrapper;
 
 import android.view.ViewGroup;
 
-import com.example.awesomelibrary.andi.SimplePlayer;
-import com.example.awesomelibrary.andi.models.HasSettings;
-import com.example.awesomelibrary.andi.models.PlayerSettings;
+import com.example.awesomelibrary.ap.SimplePlayer;
+import com.example.awesomelibrary.ap.models.HasSettings;
+import com.example.awesomelibrary.ap.models.PlayerSettings;
 import com.example.thineventswrapper.wrapper.events.EventDispatcherWrapper;
 import com.example.thineventswrapper.wrapper.events.HasEventDispatcherWrapper;
 

@@ -1,13 +1,15 @@
 package com.example.thineventswrapper.wrapper.events.data;
 
+import com.example.awesomelibrary.ap.events.impl.MediaLoadEvent;
+
 /**
  * Created by andi on 13/07/17.
  */
 
 public class MediaLoadEventWrapper {
-    private int value;
-    public MediaLoadEventWrapper(int value){
-        this.value = value;
+    private MediaLoadEvent event;
+    public MediaLoadEventWrapper(MediaLoadEvent ev){
+        this.event = ev;
     }
-    public int getValue(){return value;}
+    public int getValue(){return event.getValue();}
 }

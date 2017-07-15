@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.awesomelibrary.andi.events.PlayerEventListener;
-import com.example.awesomelibrary.andi.events.impl.MediaLoadEvent;
-import com.example.awesomelibrary.andi.SimplePlayer;
+import com.example.awesomelibrary.ap.events.PlayerEventListener;
+import com.example.awesomelibrary.ap.events.impl.MediaLoadEvent;
+import com.example.awesomelibrary.ap.SimplePlayer;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tv;

@@ -1,4 +1,4 @@
-package com.example.awesomelibrary.andi.models;
+package com.example.awesomelibrary.ap.models;
 
 /**
  * Created by andi on 02/07/17.

@@ -1,15 +1,17 @@
 package com.example.thineventswrapper.wrapper.events.data;
 
+import com.example.awesomelibrary.ap.events.impl.MediaUnloadEvent;
+
 /**
  * Created by andi on 13/07/17.
  */
 
 public class MediaUnLoadEventWrapper {
-    private float value;
-    public MediaUnLoadEventWrapper(float value){
-        this.value = value;
+    private MediaUnloadEvent event;
+    public MediaUnLoadEventWrapper(MediaUnloadEvent ev){
+        this.event = ev;
     }
     public float getValue(){
-        return value;
+        return event.getValue();
     }
 }

@@ -1,13 +1,13 @@
-package com.example.awesomelibrary.andi;
+package com.example.awesomelibrary.ap;
 
 import android.view.ViewGroup;
 
-import com.example.awesomelibrary.andi.events.EventDispatcher;
-import com.example.awesomelibrary.andi.events.HasEventDispatcher;
-import com.example.awesomelibrary.andi.events.impl.EventDispatcherImpl;
-import com.example.awesomelibrary.andi.models.DRMProtection;
-import com.example.awesomelibrary.andi.models.HasSettings;
-import com.example.awesomelibrary.andi.models.PlayerSettings;
+import com.example.awesomelibrary.ap.events.EventDispatcher;
+import com.example.awesomelibrary.ap.events.HasEventDispatcher;
+import com.example.awesomelibrary.ap.events.impl.EventDispatcherImpl;
+import com.example.awesomelibrary.ap.models.DRMProtection;
+import com.example.awesomelibrary.ap.models.HasSettings;
+import com.example.awesomelibrary.ap.models.PlayerSettings;
 import com.google.gson.Gson;
 
 /**

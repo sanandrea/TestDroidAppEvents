@@ -1,4 +1,4 @@
-package com.example.awesomelibrary.andi.events;
+package com.example.awesomelibrary.ap.events;
 
 /**
  * Created by andi on 10/06/17.

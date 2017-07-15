@@ -1,4 +1,4 @@
-package com.example.awesomelibrary.andi.events;
+package com.example.awesomelibrary.ap.events;
 
 /**
  * Created by andi on 10/06/17.
@@ -9,9 +9,7 @@ public abstract class PlayerEvent<H> {
 
     public abstract PlayerEvent.Type<H> getType();
 
-
-    public static class Type<H>
-    {
+    public static class Type<H> {
         private final String eType;
         public Type(String eType){
             this.eType = eType;
